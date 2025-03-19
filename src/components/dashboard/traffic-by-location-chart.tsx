@@ -14,15 +14,15 @@ export const TrafficByLocationChart = () => {
 
   return (
     <ChartContainer config={chartConfig}>
-      <PieChart width={200} height={200}>
+      <PieChart width={150} height={150}>
         <Pie
           data={TRAFFIC_BY_LOCATION_DATA}
-          cx={120}
-          cy={200}
-          innerRadius={40}
-          outerRadius={80}
+          cx={70}
+          cy={95}
+          innerRadius={35}
+          outerRadius={70}
           fill="#8884d8"
-          paddingAngle={5}
+          paddingAngle={3}
           dataKey="value"
         >
           {TRAFFIC_BY_LOCATION_DATA.map((_, index) => (

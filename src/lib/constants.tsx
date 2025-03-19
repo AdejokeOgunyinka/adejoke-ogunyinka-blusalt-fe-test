@@ -33,3 +33,14 @@ export const TOTAL_USERS_LEGEND = [
   { id: 1, name: "This year", color: "bg-[#1C1C1C]" },
   { id: 2, name: "Last year", color: "bg-[#A8C5DA]" },
 ];
+
+export const TRAFFIC_BY_WEBSITE_COLORS = [
+  "#1C1C1C",
+  "#1C1C1C66",
+  "#1C1C1C1A",
+  "#FFF",
+  "#FFF",
+  "#FFF",
+  "#FFF",
+  "#FFF",
+];
