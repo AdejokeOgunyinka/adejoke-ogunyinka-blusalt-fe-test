@@ -20,6 +20,7 @@ export * from "./new-user";
 export * from "./sun";
 export * from "./wifi-signal";
 export * from "./window";
+export * from "./logo";
 
 export {
   Element3 as DashboardIcon,
