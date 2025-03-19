@@ -1,0 +1,10 @@
+export const DASHBOARD = "/";
+export const REQUESTS = "/requests";
+export const KYC = "/kyc";
+export const REPORTS = "/reports";
+export const TASKS = "/tasks";
+export const AUDIT_TRAIL = "/audit-trail";
+export const CUSTOMERS = "/customers";
+export const USERS = "/users";
+export const SETTINGS = "/settings";
+export const ADMINISTRATION = "/administration";
