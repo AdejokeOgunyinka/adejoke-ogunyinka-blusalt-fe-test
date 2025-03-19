@@ -29,7 +29,7 @@ export const getSidebarItems = (location: string) => {
   const getVariant = (href: string) => {
     return href === location ? "Bold" : "Outline";
   };
-  const size = "16";
+  const size = "size-4";
 
   return [
     {
@@ -39,7 +39,7 @@ export const getSidebarItems = (location: string) => {
         <DashboardIcon
           variant={getVariant(DASHBOARD)}
           color={getColor(DASHBOARD)}
-          size={size}
+          className={size}
         />
       ),
       href: DASHBOARD,
@@ -51,7 +51,7 @@ export const getSidebarItems = (location: string) => {
         <RequestsIcon
           variant={getVariant(REQUESTS)}
           color={getColor(REQUESTS)}
-          size={size}
+          className={size}
         />
       ),
       href: REQUESTS,
@@ -60,7 +60,11 @@ export const getSidebarItems = (location: string) => {
       id: 3,
       name: "KYC",
       icon: (
-        <KYCIcon variant={getVariant(KYC)} color={getColor(KYC)} size={size} />
+        <KYCIcon
+          variant={getVariant(KYC)}
+          color={getColor(KYC)}
+          className={size}
+        />
       ),
       href: KYC,
     },
@@ -71,7 +75,7 @@ export const getSidebarItems = (location: string) => {
         <ReportsIcon
           variant={getVariant(REPORTS)}
           color={getColor(REPORTS)}
-          size={size}
+          className={size}
         />
       ),
       href: REPORTS,
@@ -83,7 +87,7 @@ export const getSidebarItems = (location: string) => {
         <TasksIcon
           variant={getVariant(TASKS)}
           color={getColor(TASKS)}
-          size={size}
+          className={size}
         />
       ),
       href: TASKS,
@@ -95,7 +99,7 @@ export const getSidebarItems = (location: string) => {
         <AuditTrailIcon
           variant={getVariant(AUDIT_TRAIL)}
           color={getColor(AUDIT_TRAIL)}
-          size={size}
+          className={size}
         />
       ),
       href: AUDIT_TRAIL,
@@ -107,7 +111,7 @@ export const getSidebarItems = (location: string) => {
         <CustomersIcon
           variant={getVariant(CUSTOMERS)}
           color={getColor(CUSTOMERS)}
-          size={size}
+          className={size}
         />
       ),
       href: CUSTOMERS,
@@ -119,7 +123,7 @@ export const getSidebarItems = (location: string) => {
         <UsersIcon
           variant={getVariant(USERS)}
           color={getColor(USERS)}
-          size={size}
+          className={size}
         />
       ),
       href: USERS,
@@ -131,7 +135,7 @@ export const getSidebarItems = (location: string) => {
         <SettingsIcon
           variant={getVariant(SETTINGS)}
           color={getColor(SETTINGS)}
-          size={size}
+          className={size}
         />
       ),
       href: SETTINGS,
@@ -143,7 +147,7 @@ export const getSidebarItems = (location: string) => {
         <AdministrationIcon
           variant={getVariant(ADMINISTRATION)}
           color={getColor(ADMINISTRATION)}
-          size={size}
+          className={size}
         />
       ),
       href: ADMINISTRATION,

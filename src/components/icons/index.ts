@@ -9,6 +9,7 @@ import {
   SecurityUser,
   Setting2,
   Security,
+  HambergerMenu,
 } from "iconsax-react";
 
 export * from "./arrow-up";
@@ -21,6 +22,7 @@ export * from "./sun";
 export * from "./wifi-signal";
 export * from "./window";
 export * from "./logo";
+export * from "./search";
 
 export {
   Element3 as DashboardIcon,
@@ -33,4 +35,5 @@ export {
   SecurityUser as UsersIcon,
   Setting2 as SettingsIcon,
   Security as AdministrationIcon,
+  HambergerMenu as MenuIcon,
 };
