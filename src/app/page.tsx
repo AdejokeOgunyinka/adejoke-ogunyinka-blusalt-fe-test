@@ -4,6 +4,7 @@ import {
   StatisticsCard,
   TotalUsersGraph,
   TrafficByLocationChart,
+  TrafficByWebsiteChart,
 } from "@/components/dashboard";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui";
 import {
@@ -13,7 +14,9 @@ import {
   NOTIFICATION_ICONS,
   NOTIFICATIONS,
   TOTAL_USERS_LEGEND,
+  TRAFFIC_BY_LOCATION_PERCENTAGE_DATA,
 } from "@/lib";
+import { cn } from "@/lib/utils";
 
 const Dashboard = () => {
   return (
@@ -66,6 +69,8 @@ const Dashboard = () => {
             <h1 className="text-sm font-semibold text-[#1C1C1C]">
               Traffic by Website
             </h1>
+
+            <TrafficByWebsiteChart />
           </div>
         </div>
 
@@ -78,12 +83,30 @@ const Dashboard = () => {
             <ReportsGeneratedChart />
           </div>
 
-          <div className="col-span-2 bg-[#F7F9FB] rounded-2xl p-6 grid gap-y-4">
+          <div className="col-span-2 bg-[#F7F9FB] rounded-2xl p-6 grid gap-y-4 relative">
             <h1 className="text-sm font-semibold text-[#1C1C1C]">
               Traffic by Location
             </h1>
 
             <TrafficByLocationChart />
+
+            <div className="grid gap-3 absolute right-11 lg:right-7 top-23">
+              {TRAFFIC_BY_LOCATION_PERCENTAGE_DATA.map((traffic) => (
+                <div
+                  className="flex gap-x-12 items-center justify-between"
+                  key={traffic.name}
+                >
+                  <div className="flex items-center gap-x-[5px]">
+                    <div
+                      className={cn("rounded-full size-1.5", traffic.color)}
+                    ></div>
+                    <p>{traffic.name}</p>
+                  </div>
+
+                  <p className="text-xs text-[#1C1C1C]">{traffic.percent}%</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

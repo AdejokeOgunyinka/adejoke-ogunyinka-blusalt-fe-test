@@ -186,3 +186,57 @@ export const MARKETING_AND_SEO_DATA = [
   { name: "Nov", amt: "10000" },
   { name: "Dec", amt: "25000" },
 ];
+
+export const TRAFFIC_BY_LOCATION_PERCENTAGE_DATA = [
+  { name: "Nigeria", value: 3860, percent: "38.6", color: "bg-[#1C1C1C]" },
+  { name: "Kenya", value: 3080, percent: "22.5", color: "bg-[#B1E3FF]" },
+  { name: "Ghana", value: 2250, percent: "30.8", color: "bg-[#A1E3CB]" },
+  { name: "Benin Republic", value: 810, percent: "8.1", color: "bg-[#A8C5DA]" },
+];
+
+export const TRAFFIC_BY_WEBSITE_DATA = [
+  {
+    name: "Google",
+    amt1: "0.7",
+    amt2: "0.7",
+    amt3: "0.7",
+    gap: "0.2",
+  },
+  {
+    name: "Youtube",
+    amt1: "1.2",
+    amt2: "1.2",
+    amt3: "1.2",
+    gap: "0.2",
+  },
+  {
+    name: "Instagram",
+    amt1: "0.9",
+    amt2: "0.9",
+    amt3: "0.9",
+    gap: "0.2",
+  },
+  { name: "Pinterest", amt1: "2", amt2: "2", amt3: "2", gap: "0.2" },
+  {
+    name: "Facebook",
+    amt1: "0.5",
+    amt2: "0.5",
+    amt3: "0.5",
+
+    gap: "0.2",
+  },
+  {
+    name: "Twitter",
+    amt1: "0.9",
+    amt2: "0.9",
+    amt3: "0.9",
+    gap: "0.2",
+  },
+  {
+    name: "Snapchat",
+    amt1: "5",
+    amt2: "5",
+    amt3: "5",
+    gap: "0.2",
+  },
+];
