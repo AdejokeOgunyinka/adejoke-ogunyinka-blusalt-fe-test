@@ -28,7 +28,7 @@ export default function RootLayout({
           <div className="md:ml-24 lg:ml-[226px]">
             <Header />
 
-            <div className="mt-[55px] md:mt-[79px] p-[15px] md:px-[30px] md:py-6">
+            <div className="mt-[65px] md:mt-[79px] p-[15px] md:px-[30px] md:py-6">
               {children}
             </div>
           </div>

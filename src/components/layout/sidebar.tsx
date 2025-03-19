@@ -46,7 +46,11 @@ export const SidebarContent = () => {
 
       <div className="flex gap-x-2 items-center p-2">
         <Avatar>
-          <AvatarImage src="./user-img.png" alt="user" />
+          <AvatarImage
+            src="./user-img.png"
+            alt="user"
+            className="object-cover"
+          />
           <AvatarFallback>BW</AvatarFallback>
         </Avatar>
 
