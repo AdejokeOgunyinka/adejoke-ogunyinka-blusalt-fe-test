@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
-import { Sidebar } from "@/components/layout";
+import { Header, Sidebar } from "@/components/layout";
 import "./globals.css";
 
 const ibmPlexSans = IBM_Plex_Sans({
@@ -25,7 +25,10 @@ export default function RootLayout({
         <div className="w-full h-screen">
           <Sidebar />
 
-          <div className="md:ml-24 lg:ml-[226px]">{children}</div>
+          <div className="md:ml-24 lg:ml-[226px]">
+            <Header />
+            <div>{children}</div>
+          </div>
         </div>
       </body>
     </html>
