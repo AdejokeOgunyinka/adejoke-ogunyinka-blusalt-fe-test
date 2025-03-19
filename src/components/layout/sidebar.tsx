@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { getSidebarItems, SIDEBAR_SEPARATOR_INDICES } from "@/utils";
+import { getSidebarItems, SIDEBAR_SEPARATOR_INDICES } from "@/lib";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui";
 import { LogoWithoutText } from "../icons";
 

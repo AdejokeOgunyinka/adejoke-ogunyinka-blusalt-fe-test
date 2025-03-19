@@ -21,7 +21,7 @@ import {
   SETTINGS,
   TASKS,
   USERS,
-} from "./routes";
+} from "../lib/routes";
 export const getSidebarItems = (location: string) => {
   const getColor = (href: string) => {
     return href === location ? "#161716" : "#292D32";
