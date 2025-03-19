@@ -1,6 +1,7 @@
 "use client";
 import { getSidebarItems } from "@/lib";
 import { usePathname } from "next/navigation";
+import { SidebarContent } from "./sidebar";
 import {
   BellIcon,
   CounterClockwiseClockIcon,
@@ -19,7 +20,6 @@ import {
   DrawerTrigger,
   Input,
 } from "../ui";
-import { Sidebar, SidebarContent } from "./sidebar";
 
 export const Header = () => {
   const location = usePathname();
@@ -28,7 +28,7 @@ export const Header = () => {
   )[0]?.name;
 
   return (
-    <div className="fixed top-0 left-0 md:left-24 lg:left-[226px] right-0 bg-white p-[15px]  md:pt-[30px] md:pb-5 md:px-[30px] flex items-center justify-between border-b border-[#F0ECEC]">
+    <div className="fixed top-0 left-0 md:left-24 z-30 lg:left-[226px] right-0 bg-white p-[15px]  md:pt-[30px] md:pb-5 md:px-[30px] flex items-center justify-between border-b border-[#F0ECEC]">
       <h1 className="capitalize text-black font-medium text-[22px]">{title}</h1>
 
       <div className="flex items-center gap-x-5">
@@ -36,7 +36,7 @@ export const Header = () => {
           <div className="flex items-center gap-x-1">
             <SearchIcon />
             <Input
-              className="border-none shadow-none h-5 w-24 rounded-none placeholder:text-[#1C1C1C33] focus-visible:ring-offset-0 focus-visible:ring-0"
+              className="border-none shadow-none h-5 w-24 rounded-none placeholder:text-[#1C1C1C33] focus-visible:ring-offset-0 focus-visible:ring-0 px-0"
               placeholder="Search"
             />
           </div>
