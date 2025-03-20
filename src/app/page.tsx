@@ -90,7 +90,7 @@ const Dashboard = () => {
 
             <TrafficByLocationChart />
 
-            <div className="grid gap-3 absolute right-11 lg:right-7 top-23">
+            <div className="grid gap-3 lg:absolute lg:right-11 xl:right-7 lg:top-23">
               {TRAFFIC_BY_LOCATION_PERCENTAGE_DATA.map((traffic) => (
                 <div
                   className="flex gap-x-12 items-center justify-between"
@@ -110,11 +110,13 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="bg-[#F7F9FB] rounded-2xl p-6 grid gap-y-4">
+        <div className="bg-[#F7F9FB] rounded-2xl p-6 flex flex-col gap-y-4">
           <h1 className="text-sm font-semibold text-[#1C1C1C]">
             Marketing & SEO
           </h1>
-          <MarketingAndSeoChart />
+          <div>
+            <MarketingAndSeoChart />
+          </div>
         </div>
       </div>
 

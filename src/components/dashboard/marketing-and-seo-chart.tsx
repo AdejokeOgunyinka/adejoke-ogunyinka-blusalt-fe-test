@@ -1,7 +1,7 @@
 "use client";
 
 import { Bar, BarChart, Cell, XAxis, YAxis } from "recharts";
-import { MARKETING_AND_SEO_DATA, REPORT_GENERATED_COLORS } from "@/lib";
+import { MARKETING_AND_SEO_COLORS, MARKETING_AND_SEO_DATA } from "@/lib";
 import {
   type ChartConfig,
   ChartContainer,
@@ -18,7 +18,7 @@ export const MarketingAndSeoChart = () => {
   } satisfies ChartConfig;
 
   return (
-    <ChartContainer config={chartConfig}>
+    <ChartContainer config={chartConfig} className="w-full">
       <BarChart data={MARKETING_AND_SEO_DATA} barCategoryGap="25%">
         <XAxis dataKey="name" />
         <YAxis />
@@ -27,7 +27,7 @@ export const MarketingAndSeoChart = () => {
           {MARKETING_AND_SEO_DATA.map((_, index) => (
             <Cell
               key={`cell-${index}`}
-              fill={REPORT_GENERATED_COLORS[index % 20]}
+              fill={MARKETING_AND_SEO_COLORS[index % 20]}
             />
           ))}
         </Bar>

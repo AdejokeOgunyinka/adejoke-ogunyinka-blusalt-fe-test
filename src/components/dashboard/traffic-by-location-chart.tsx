@@ -17,8 +17,8 @@ export const TrafficByLocationChart = () => {
       <PieChart width={150} height={150}>
         <Pie
           data={TRAFFIC_BY_LOCATION_DATA}
-          cx={70}
-          cy={95}
+          cx={65}
+          cy={90}
           innerRadius={35}
           outerRadius={70}
           fill="#8884d8"

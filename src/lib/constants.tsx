@@ -44,3 +44,18 @@ export const TRAFFIC_BY_WEBSITE_COLORS = [
   "#FFF",
   "#FFF",
 ];
+
+export const MARKETING_AND_SEO_COLORS = [
+  "#95A4FC",
+  "#BAEDBD",
+  "#1C1C1C",
+  "#B1E3FF",
+  "#A8C5DA",
+  "#A1E3CB",
+  "#95A4FC",
+  "#BAEDBD",
+  "#1C1C1C",
+  "#B1E3FF",
+  "#A8C5DA",
+  "#A1E3CB",
+];
