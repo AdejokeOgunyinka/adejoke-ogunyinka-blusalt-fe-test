@@ -18,7 +18,10 @@ export const TrafficByWebsiteChart = () => {
   } satisfies ChartConfig;
 
   return (
-    <ChartContainer config={chartConfig} className="w-[70%] h-full">
+    <ChartContainer
+      config={chartConfig}
+      className="w-[70%] h-full traffic-by-website"
+    >
       <BarChart
         width={500}
         height={300}

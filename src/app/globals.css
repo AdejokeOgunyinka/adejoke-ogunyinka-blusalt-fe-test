@@ -128,3 +128,7 @@
   }
 }
 
+.recharts-cartesian-axis-line, .recharts-cartesian-axis-tick-line, .traffic-by-website .recharts-cartesian-axis.xAxis {
+  visibility: hidden;
+}
+
