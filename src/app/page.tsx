@@ -21,7 +21,7 @@ import { cn } from "@/lib/utils";
 const Dashboard = () => {
   return (
     <div className="flex flex-col md:flex-row gap-3.5">
-      <div className="md:w-[calc(100%-278px)] grid gap-4">
+      <div className="md:w-[calc(100%-278px)] 2xl:w-[calc(100%-414px)] grid gap-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-3.5">
           {DASHBOARD_STATISTICS.map((stat) => (
             <StatisticsCard
@@ -120,7 +120,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="bg-[#FFF8F8] md:w-[264px] p-4 rounded-[20px] xl:rounded-[30px] h-fit md:h-[calc(100vh-120px)] overflow-y-scroll md:fixed md:right-[30px] md:top-[103px]">
+      <div className="bg-[#FFF8F8] md:w-[264px] 2xl:w-[400px] p-4 rounded-[20px] xl:rounded-[30px] h-fit md:h-[calc(100vh-120px)] overflow-y-scroll md:fixed md:right-[30px] md:top-[103px] 2xl:top-[115px]">
         <div className="grid gap-y-1">
           <div className="px-1 py-2">
             <h2 className="text-sm">Notifications</h2>
