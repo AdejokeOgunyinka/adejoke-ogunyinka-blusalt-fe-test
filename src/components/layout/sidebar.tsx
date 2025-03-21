@@ -34,7 +34,9 @@ export const SidebarContent = () => {
               className="flex gap-x-2 items-center px-5 py-4"
             >
               {sidebarItem.icon}
-              <h3 className="md:hidden lg:inline-flex">{sidebarItem.name}</h3>
+              <h3 className="md:hidden lg:inline-flex text-sm 2xl:text-xl">
+                {sidebarItem.name}
+              </h3>
             </Link>
 
             {SIDEBAR_SEPARATOR_INDICES.includes(index) && (
@@ -63,7 +65,7 @@ export const SidebarContent = () => {
 };
 export const Sidebar = () => {
   return (
-    <div className="w-24 lg:w-[226px] overflow-y-scroll hidden md:grid fixed top-0 left-0 bottom-0 px-5 py-[30px] gap-y-[30px] place-content-start border-r border-[#F0ECEC]">
+    <div className="w-24 lg:w-[226px] 2xl:w-[350px] overflow-y-scroll hidden md:grid fixed top-0 left-0 bottom-0 px-5 py-[30px] gap-y-[30px] place-content-start border-r border-[#F0ECEC]">
       <SidebarContent />
     </div>
   );

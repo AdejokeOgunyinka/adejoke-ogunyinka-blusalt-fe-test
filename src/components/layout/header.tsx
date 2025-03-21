@@ -28,8 +28,10 @@ export const Header = () => {
   )[0]?.name;
 
   return (
-    <div className="fixed top-0 left-0 md:left-24 z-30 lg:left-[226px] right-0 bg-white p-[15px]  md:pt-[30px] md:pb-5 md:px-[30px] flex items-center justify-between border-b border-[#F0ECEC]">
-      <h1 className="capitalize text-black font-medium text-[22px]">{title}</h1>
+    <div className="fixed top-0 left-0 md:left-24 z-30 lg:left-[226px] 2xl:left-[350px] right-0 bg-white p-[15px]  md:pt-[30px] md:pb-5 md:px-[30px] flex items-center justify-between border-b border-[#F0ECEC]">
+      <h1 className="capitalize text-black font-medium text-[22px] 2xl:text-[33px]">
+        {title}
+      </h1>
 
       <div className="flex items-center gap-x-5">
         <div className="hidden md:flex items-center gap-x-2 bg-[#1C1C1C0D] px-2 py-1.5 rounded-lg">

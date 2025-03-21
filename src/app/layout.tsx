@@ -25,10 +25,10 @@ export default function RootLayout({
         <div className="w-full h-screen">
           <Sidebar />
 
-          <div className="md:ml-24 lg:ml-[226px]">
+          <div className="md:ml-24 lg:ml-[226px] 2xl:ml-[350px]">
             <Header />
 
-            <div className="mt-[65px] md:mt-[79px] p-[15px] md:px-[30px] md:py-6">
+            <div className="mt-[65px] md:mt-[79px] p-[15px] md:px-[30px] md:py-6 2xl:py-10">
               {children}
             </div>
           </div>
