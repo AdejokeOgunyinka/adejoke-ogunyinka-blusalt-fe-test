@@ -1,6 +1,6 @@
 # NextJS + React + TS
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-It's an assessment for a job interview to gauge my understanding of frontend development using Next.js.
+It's an assessment for a job interview to gauge my understanding of frontend development using React JS & Next.js.
 
 ## Getting Started
 After cloning the project, install the project dependencies:
